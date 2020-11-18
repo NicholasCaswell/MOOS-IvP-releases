@@ -24,15 +24,21 @@ Additional packages:
 
   libfltk1.3-dev  - Fast Light Toolkit - development files
   freeglut3-dev   - OpenGL Utility Toolkit development files
-  libpng12-dev    - PNG library - development
+  libpng12-dev    - PNG library - development -- replaced
   libjpeg-dev     - Independent JPEG Group's JPEG runtime library 
   libxft-dev      - FreeType-based font drawing library for X
   libxinerama-dev - X11 Xinerama extension library (development headers)
-  libtiff4-dev    - Tag Image File Format library (TIFF), development files
+  libtiff4-dev    - Tag Image File Format library (TIFF), development files -- replaced
+
+Replaced Packages:
+libpng12-dev ---> libpng-dev
+libtiff4-dev ---> libtiff5-dev
+
+The old versions of these packages were dropped after Ubuntu 16.04 LTS
 
 To do it all, cut and paste this:
 
-  sudo apt-get install g++ subversion xterm cmake libfltk1.3-dev freeglut3-dev libpng12-dev libjpeg-dev libxft-dev libxinerama-dev libtiff4-dev
+  sudo apt-get install g++ subversion xterm cmake libfltk1.3-dev freeglut3-dev libpng-dev libjpeg-dev libxft-dev libxinerama-dev libtiff5-dev
 
 
 NOTE: As of this date we are no longer including FLTK as part of the 
